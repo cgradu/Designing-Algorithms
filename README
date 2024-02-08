@@ -1,0 +1,63 @@
+Tema 1 - PA:
+Constantin Radu-Giorgian 321CC
+
+Pentru toate problemele:
+Mai multe detalii despre implementare se afla sub forma de comentarii in fisierul precizat.
+Am folosit uint64_t pentru a incapea toate numerele date.
+
+Problema 1 - feribot.cpp:
+In implementarea acestei probleme am folosit un binary search pentru a gasi solutia si o functie pentru a verifica daca solutia gasita este buna sau cea optima.
+
+Complexitati:  
+Timp: O(N*log(S)) unde N este nr masinilor si S este greutatea tuturor masinilor, datorat binary searchului
+Spatiu: O(N)
+
+Problema 2 - nostory.cpp:
+
+Task 1:
+In implementarea acestei probleme am folosit sortarea unui vector in care am luat valorile din ambii pentru a gasi valorile maxime ce se afla in ultima jumatate a acestui vector. 
+Complexitati: 
+Timp: O(N*log(N)) unde N este dimensiunea unui vector, datorata sortarii vectorului
+Spatiu: O(N)
+
+Task 2:
+In implementarea acestei probleme am folosit 2 vectori , unul pentru valorile maxime si unul pentru valorile minime. 
+Am sortat ambii vectorii astfel incat sa pot interschimba valorile minime ale vectorului de valorile maxime cu cele maxime din vectorul de valori minime astfel incat vectorul de maxime sa aiba elementele necesare solutiei.
+
+Complexitati:
+Timp: O(N*log(N)) unde N este dimensiunea unui vector, datorata sortarii vectorului
+Spatiu: O(N)
+
+Problema 3 - sushi.cpp:
+
+Task 1 + Task 2:
+In implementarea acestei probleme am folosit implementarea din laboratorul de dynamic programming, cea de la problema Rucsac deoarece avea aceasi abordare.
+Am creat matricea dp in care retin solutiile intermediare folosite pentru a afla solutia finala. 
+Matricea retine pentru costul i si platourile pana la j inclusiv ce nota maxima se poate obtine.
+Singura diferenta intre taskurile acestea este faptul ca am verificat daca putem luat si 2 platouri in matricea de solutii.
+
+Complexitati: 
+Timp: O((M+1)^2) datorita calcularii solutiilor in vectorul dp.
+Spatiu: O((M+1)^2) datorita vectorului dp.
+
+Task 3:
+Am incercat sa retin un contor pentru a afla cand au fost luat cele n platouri insa nu am reusit sa termin implementarea.
+In esenta este foarte similara cu cea de la taskul 2.
+
+Problema 4 - semnale.cpp:
+Nu am incercat implementarea problemei.
+
+Problema 5 - badgpt.cpp:
+In aceasta problema am folosit matricea lui Fibonacii pentru a afla numarul de combinari posibile pentru sirul dat.
+Am aflat recurenta prin inductie matematica si am observat ca numarul de moduri in care se pot scrie nn si uu este chiar Fibonacci de numarul de litere, iar numarul de moduri in care se poate scrie intregul sir este prin inmultirea acestora.
+In implementarea am luat F(n+1) din matrice deoarece F(0) = 0 si o litera nu poate aparea de 0 ori asa ca practic este decalat cu un termen acest numar din secventa. Adica n -> F(n+1).
+Pentru a calcula matricea lui Fibonacci am folosit implementarea de la laboratorul de dynamic programming, problema cu gardurile lui Gigel.
+Complexitate:
+Timp: O(N), unde N este cel mai mare number.
+Spatiu:O(KMAX^2) datorita matricii Fibonacci, unde KMAX este dimensiunea unei linii / coloane din matrice.
+
+Alte surse:
+https://www.geeksforgeeks.org/
+https://stackoverflow.com/
+https://www.wikipedia.org/
+https://www.programiz.com/
