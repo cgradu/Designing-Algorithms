@@ -50,7 +50,7 @@ Using the Fibonacci matrix to determine the number of possible combinations for 
   - Space: O(KMAX^2) due to the Fibonacci matrix, where KMAX is the size of a row/column in the matrix.
 
 **Additional Sources**:
-- GeeksforGeeks
-- Stack Overflow
-- Wikipedia
-- Programiz
+- https://www.geeksforgeeks.org/
+- https://stackoverflow.com/
+- https://www.wikipedia.org/
+- https://www.programiz.com/
